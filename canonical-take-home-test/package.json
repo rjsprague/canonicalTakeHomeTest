@@ -1,0 +1,24 @@
+{
+  "name": "canonical-take-home-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "build-css": "sass -w --load-path=node_modules src:dist --style=compressed",
+    "watch-css":  "yarn build-css && sass --load-path=node_modules -w src:dist --style=compressed"
+  },
+  "dependencies": {
+    "next": "14.0.3",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.69.5",
+    "vanilla-framework": "^4.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3"
+  }
+}
